@@ -1,0 +1,94 @@
+<div class="w-full flex flex-row my-3 ">
+    <div class="flex-1 text-right mr-2 items-center">
+        <span class=" text-gray-500 tracking-widest items-center my-auto">
+            {{ __('Nombre:') }}
+        </span>
+    </div>
+    <div class="flex-1 ml-2">
+        {!! Form::text('name', old('name'), ['class' => 'w-full rounded-xl']) !!}
+        @error('name')
+            <x-error-input>{{ $message }}</x-error-input>
+        @enderror
+    </div>
+</div>
+<div class="w-full flex flex-row my-3 ">
+    <div class="flex-1 text-right mr-2 items-center">
+        <span class=" text-gray-500 tracking-widest items-center my-auto">
+            {{ __('Código:') }}
+        </span>
+    </div>
+    <div class="flex-1 ml-2">
+        {!! Form::text('code', old('code'), ['class' => 'w-full rounded-xl']) !!}
+        @error('code')
+            <x-error-input>{{ $message }}</x-error-input>
+        @enderror
+    </div>
+</div>
+<div class="w-full flex flex-row my-3 ">
+    <div class="flex-1 text-right mr-2 items-center">
+        <span class=" text-gray-500 tracking-widest items-center my-auto">
+            {{ __('Gerente:') }}
+        </span>
+    </div>
+    <div class="flex-1 ml-2">
+        <select name="user_id" class="w-full rounded-xl">
+            <option>{{ __('Gerente') }}</option>
+            @foreach ($users as $user)
+                @if (old('user_id') == $user->id)
+                    <option value="{{ $user->id }}" selected>{{ $user->name }}</option>
+                @else
+                    @if (isset($store) && $store->user_id == $user->id)
+                        <option value="{{ $user->id }}" selected>{{ $user->name }}</option>
+                    @else
+                        <option value="{{ $user->id }}">{{ $user->name }}</option>
+                    @endif
+                @endif
+            @endforeach
+        </select>
+        @error('user_id')
+            <x-error-input>{{ $message }}</x-error-input>
+        @enderror
+    </div>
+</div>
+
+<div class="w-full flex flex-row my-3 ">
+    <div class="flex-1 text-right mr-2 items-center">
+        <span class=" text-gray-500 tracking-widest items-center my-auto">
+            {{ __('Distrito:') }}
+        </span>
+    </div>
+    <div class="flex-1 ml-2">
+        <select name="district_id" class="w-full rounded-xl">
+            <option>{{ __('Distrito') }}</option>
+            @foreach ($districts as $district)
+                @if (old('district_id') == $district->id)
+                    <option value="{{ $district->id }}" selected>{{ $district->name }}</option>
+                @else
+                    @if (isset($store) && $store->district_id == $district->id)
+                        <option value="{{ $district->id }}" selected>{{ $district->name }}</option>
+                    @else
+                        <option value="{{ $district->id }}">{{ $district->name }}</option>
+                    @endif
+                @endif
+            @endforeach
+        </select>
+        @error('district_id')
+            <x-error-input>{{ $message }}</x-error-input>
+        @enderror
+    </div>
+</div>
+<div class="w-full flex flex-row my-3 ">
+    <div class="flex-1 text-right mr-2 items-center">
+        <span class=" text-gray-500 tracking-widest items-center my-auto">
+            {{ __('Estado:') }}
+        </span>
+    </div>
+    <div class="flex-1 ml-2">
+        {!! Form::select('status', ['1' => 'Activado', '0' => 'Desactivado'], old('status'), [
+            'class' => 'w-full rounded-xl',
+        ]) !!}
+        @error('status')
+            <x-error-input>{{ $message }}</x-error-input>
+        @enderror
+    </div>
+</div>

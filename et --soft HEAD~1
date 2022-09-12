@@ -1,0 +1,65 @@
+[33mcommit 6ba0bc4dc5861c1bb18fb8737aa776ebe1378a79[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: El Soberano Adrapok <adrapok@gmail.com>
+Date:   Sun Sep 11 19:39:18 2022 -0500
+
+    subir carpeta resto
+
+[33mcommit 049f42bba8358ffe6f36583e8a790128de847a11[m
+Author: El Soberano Adrapok <adrapok@gmail.com>
+Date:   Sun Sep 11 19:36:35 2022 -0500
+
+    subir carpeta public/vendor
+
+[33mcommit 26f1f547a3b1a1c08d366dd66517b02d517d5d3b[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: El Soberano Adrapok <adrapok@gmail.com>
+Date:   Sun Sep 11 19:35:16 2022 -0500
+
+    subir carpeta tests
+
+[33mcommit 79c309fb187d46d4741dd27d064e548d2ff8d7ff[m
+Author: El Soberano Adrapok <adrapok@gmail.com>
+Date:   Sun Sep 11 19:34:46 2022 -0500
+
+    subir carpeta lang
+
+[33mcommit 4056a0a001e4de6e5a178e0b58d8f9ecb4f36ac4[m
+Author: El Soberano Adrapok <adrapok@gmail.com>
+Date:   Sun Sep 11 19:32:17 2022 -0500
+
+    subir carpeta routes
+
+[33mcommit 8549b810c7e61b4f8e52fd874e6b838e1709c3ac[m
+Author: El Soberano Adrapok <adrapok@gmail.com>
+Date:   Sun Sep 11 19:26:26 2022 -0500
+
+    subir carpeta storage
+
+[33mcommit f23a5634187c29db05510ce85fcace4883689c6e[m
+Author: El Soberano Adrapok <adrapok@gmail.com>
+Date:   Sun Sep 11 19:25:49 2022 -0500
+
+    subir carpeta resource
+
+[33mcommit 6e6361be0fee1af637553bd9da492717aa8395e0[m
+Author: El Soberano Adrapok <adrapok@gmail.com>
+Date:   Sun Sep 11 19:25:12 2022 -0500
+
+    subir carpeta database
+
+[33mcommit 0ad263409df5b4a8c15e3b9d5c779e509ef0abc0[m
+Author: El Soberano Adrapok <adrapok@gmail.com>
+Date:   Sun Sep 11 19:24:43 2022 -0500
+
+    subir carpeta config
+
+[33mcommit 0e9ff3fa10a2545773fdbbc2fc06e9f59d74c7db[m
+Author: El Soberano Adrapok <adrapok@gmail.com>
+Date:   Sun Sep 11 19:24:14 2022 -0500
+
+    subir carpeta bootstrap
+
+[33mcommit 31fffdde4dbb877c44357bc959c80f8edad3e7d8[m
+Author: El Soberano Adrapok <adrapok@gmail.com>
+Date:   Sun Sep 11 19:22:38 2022 -0500
+
+    subir carpeta app
